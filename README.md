@@ -10,7 +10,7 @@ During quarterly audits, internal audit management works with external auditors 
 
 **The Solution:** This VBA macro reads the exclusion list from the "Input" sheet, automatically highlights matching cells in the pivot table on the "Scoping" sheet, and adds calculated totals and percentages. What once took hours of manual work now runs in seconds.
 
-<!-- TODO: Add screenshot of the final formatted pivot table with highlighted exclusions -->
+<img width="846" height="685" alt="image" src="https://github.com/user-attachments/assets/a45bfaad-f37e-40df-9b87-9df3fa9942a2" />
 
 ## Features
 
@@ -63,7 +63,8 @@ These combinations are important because audit testing scope is often determined
 
 5. **Cleanup**: Deletes the temporary calculation sheet and returns focus to the main Scoping sheet
 
-<!-- TODO: Add screenshot of the Input sheet showing the exclusion list structure -->
+<img width="1366" height="197" alt="image" src="https://github.com/user-attachments/assets/1f86c257-2b4c-419a-8724-9b20c3070076" />
+
 
 ## Setup Instructions
 
@@ -72,15 +73,6 @@ These combinations are important because audit testing scope is often determined
 1. **Enable Macros**:
    - When opening the workbook, click "Enable Content" in the yellow security banner
    - If you don't see the banner, go to File → Options → Trust Center → Trust Center Settings → Macro Settings → Enable all macros (or add this workbook to Trusted Locations)
-
-<!-- TODO: Add screenshot showing the three required sheets in the Excel workbook tabs -->
-
-### Understanding the Buttons
-
-- **Large Green Button**: Runs the main `Scoping_Exclusions` macro
-- **Smaller Button**: Runs the `Clean_Scoping` reset macro
-
-<!-- TODO: Add screenshot highlighting the macro buttons location -->
 
 ## Usage Steps
 
@@ -109,8 +101,6 @@ These combinations are important because audit testing scope is often determined
    - Two new columns appear after the pivot table:
      - "Total Excluded by FSLI"
      - "Percentage of total Excluded"
-
-<!-- TODO: Add before/after screenshots showing pivot table transformation -->
 
 **Future Enhancements** could include:
 - Error handling (`On Error GoTo ErrorHandler`)
